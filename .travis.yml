@@ -6,4 +6,5 @@ bundler_args: --without postgres sqlite
 before_script:
   - mysql -e 'create database chiliproject_test;'
   - cp config/database.ci.yml config/database.yml
+  - bundle exec rake db:migrate
 # script: bundle exec rspec spec
