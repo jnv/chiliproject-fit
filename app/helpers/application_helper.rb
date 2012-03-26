@@ -851,7 +851,7 @@ module ApplicationHelper
   def back_url_hidden_field_tag
     back_url = params[:back_url] || request.env['HTTP_REFERER']
     back_url = CGI.unescape(back_url.to_s)
-    hidden_field_tag('back_url', CGI.escape(back_url)) unless back_url.blank?
+    hidden_field_tag('back_url', CGI.escape(back_url), :id => nil) unless back_url.blank?
   end
 
   def check_all_links(form_name)
@@ -885,7 +885,7 @@ module ApplicationHelper
   def context_menu(url)
     unless @context_menu_included
       content_for :header_tags do
-        javascript_include_tag('context_menu') +
+        javascript_include_tag('context_menu.jquery') +
           stylesheet_link_tag('context_menu')
       end
       if l(:direction) == 'rtl'
@@ -895,7 +895,7 @@ module ApplicationHelper
       end
       @context_menu_included = true
     end
-    javascript_tag "new ContextMenu('#{ url_for(url) }')"
+    javascript_tag "jQuery(document).ContextMenu('#{ url_for(url) }')"
   end
 
   def context_menu_link(name, url, options={})

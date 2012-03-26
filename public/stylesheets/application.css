@@ -204,6 +204,16 @@ table.attributes td { vertical-align: top; }
 
 table.boards a.board, h3.comments { background: url(../images/comment.png) no-repeat 0% 50%; padding-left: 20px; }
 
+table.query-columns {
+    border-collapse: collapse;
+    border: 0;
+}
+
+table.query-columns td.buttons {
+    vertical-align: middle;
+    text-align: center;
+}
+
 td.center {text-align:center;}
 
 h3.version { background: url(../images/package.png) no-repeat 0% 50%; padding-left: 20px; }
@@ -264,8 +274,10 @@ div.issue div.subject p {margin: 0; margin-bottom: 0.1em; font-size: 90%; color:
 div.issue div.subject>div>p { margin-top: 0.5em; }
 div.issue div.subject h3 {margin: 0; margin-bottom: 0.1em;}
 
+#issue_tree {border: none;}
 #issue_tree table.issues { border: 0; }
 #issue_tree td.checkbox {display:none;}
+#issue_tree tr.self a.issue {color: inherit;}
 
 #content fieldset#filters {
     padding-bottom:10px;
