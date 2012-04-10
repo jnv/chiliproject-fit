@@ -2,6 +2,8 @@ language: ruby
 rvm:
   - 1.9.2
   - 1.9.3
+before_install:
+  - git submodule update --init --recursive
 bundler_args: --without postgres sqlite
 before_script:
   - mysql -e 'create database chiliproject_test;'
