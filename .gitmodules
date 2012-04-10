@@ -1,3 +1,0 @@
-[submodule "vendor/plugins/engines"]
-	path = vendor/plugins/engines
-	url = git://github.com/jnv/engines.git
