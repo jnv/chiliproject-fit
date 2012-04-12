@@ -9,4 +9,5 @@ before_script:
   - mysql -e 'create database chiliproject_test;'
   - cp config/database.mysql.yml config/database.yml
   - bundle exec rake db:migrate
+  - bundle exec rake db:migrate:plugins
 # script: bundle exec rspec spec
