@@ -6,8 +6,5 @@ before_install:
   - git submodule update --init --recursive
 bundler_args: --without postgres sqlite
 before_script:
-  - mysql -e 'create database chiliproject_test;'
   - cp config/database.mysql.yml config/database.yml
-  - bundle exec rake db:migrate
-  - bundle exec rake db:migrate:plugins
-# script: bundle exec rspec spec
+  - bundle exec rake ci:setup
