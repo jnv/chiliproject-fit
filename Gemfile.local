@@ -1,0 +1,3 @@
+group :unicorn do
+  gem "unicorn"
+end

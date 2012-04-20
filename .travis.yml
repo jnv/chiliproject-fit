@@ -4,7 +4,7 @@ rvm:
 #  - 1.9.2
 before_install:
   - git submodule update --init --recursive
-bundler_args: --without postgres sqlite
+bundler_args: --without postgres sqlite unicorn
 before_script:
   - cp config/database.mysql.yml config/database.yml
   - bundle exec rake ci:setup
