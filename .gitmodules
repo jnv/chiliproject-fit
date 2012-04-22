@@ -4,3 +4,6 @@
 [submodule "vendor/plugins/chiliproject_add_ldap_users"]
 	path = vendor/plugins/chiliproject_add_ldap_users
 	url = git://github.com/jnv/chiliproject_add_ldap_users.git
+[submodule "vendor/plugins/chiliproject_project_roles"]
+	path = vendor/plugins/chiliproject_project_roles
+	url = git://github.com/jnv/chiliproject_project_roles.git
