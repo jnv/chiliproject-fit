@@ -10,3 +10,6 @@
 [submodule "vendor/plugins/chiliproject_private_wiki"]
 	path = vendor/plugins/chiliproject_private_wiki
 	url = git://github.com/jnv/chiliproject_private_wiki.git
+[submodule "vendor/plugins/chiliproject_private_issues"]
+	path = vendor/plugins/chiliproject_private_issues
+	url = git://github.com/jnv/chiliproject_private_issues.git
