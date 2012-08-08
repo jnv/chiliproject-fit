@@ -1,3 +1,6 @@
 [submodule "vendor/plugins/chiliproject_project_roles"]
 	path = vendor/plugins/chiliproject_project_roles
 	url = git://github.com/jnv/chiliproject_project_roles.git
+[submodule "vendor/plugins/chiliproject_project_group"]
+	path = vendor/plugins/chiliproject_project_group
+	url = git://github.com/jnv/chiliproject_project_group.git
