@@ -22,8 +22,9 @@ matrix:
     - rvm: ree
 before_script:
   - "sudo apt-get --no-install-recommends install bzr cvs darcs git mercurial subversion"
-  - "git submodule update --init --recursive"
   - "rake ci:travis:prepare" # includes db:migrate:plugins
+  - "git submodule update --init --recursive"
+  - "rake db:migrate:plugins"
 branches:
   only:
     - unstable
