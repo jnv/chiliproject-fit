@@ -21,7 +21,8 @@ matrix:
     - rvm: rbx-18mode
 before_script:
   - "sudo apt-get --no-install-recommends install bzr cvs darcs git mercurial subversion"
-  - "rake ci:travis:prepare"
+  - "git submodule update --init --recursive"
+  - "rake ci:travis:prepare" # includes db:migrate:plugins
 branches:
   only:
     - unstable
@@ -31,4 +32,3 @@ branches:
     - /^release-.*$/
 notifications:
   email: false
-  irc: "irc.freenode.org#chiliproject"
