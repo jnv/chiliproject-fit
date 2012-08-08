@@ -8,7 +8,7 @@ rvm:
 env:
   - "RAILS_ENV=test DB=mysql BUNDLE_WITHOUT=rmagick:mysql2:postgres:sqlite"
   - "RAILS_ENV=test DB=mysql2 BUNDLE_WITHOUT=rmagick:mysql:postgres:sqlite"
-  - "RAILS_ENV=test DB=postgres BUNDLE_WITHOUT=rmagick:mysql:mysql2:sqlite"
+  #- "RAILS_ENV=test DB=postgres BUNDLE_WITHOUT=rmagick:mysql:mysql2:sqlite"
   #- "RAILS_ENV=test DB=sqlite BUNDLE_WITHOUT=rmagick:mysql:mysql2:postgres"
 matrix:
   exclude:
