@@ -22,8 +22,8 @@ before_install:
   - "wget http://de.archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi5_3.0.9-1_i386.deb -O /tmp/libffi5_3.0.9-1_i386.deb; sudo dpkg -i /tmp/libffi5_3.0.9-1_i386.deb"
   - "wget http://de.archive.ubuntu.com/ubuntu/pool/universe/d/darcs/darcs_2.3.0-3_i386.deb -O /tmp/darcs_2.3.0-3_i386.deb; sudo dpkg -i /tmp/darcs_2.3.0-3_i386.deb"
 before_script:
-  - "rake ci:travis:prepare"
-  - "rake db:migrate:plugins"
+  - "bundle exec rake ci:travis:prepare"
+  - "bundle exec rake db:migrate:plugins"
 branches:
   only:
     - unstable
