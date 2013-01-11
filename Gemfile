@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 source :rubygems
 
-gem "rails", "2.3.14"
+gem "rails", "2.3.15"
 
 gem "coderay", "~> 1.0.0"
 gem "i18n", "~> 0.4.2"
@@ -20,7 +20,8 @@ group :test do
   gem 'test-unit', :platforms => [:mri_19]
   gem 'edavis10-object_daddy', :require => 'object_daddy'
   gem 'mocha', '0.12.1'
-  gem 'capybara'
+  # capybara 2 drops ruby 1.8.7 compatibility
+  gem 'capybara', '< 2.0.0'
 end
 
 group :ldap do
